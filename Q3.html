@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+    border: thick double black;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+#hidden_table{
+    margin-top: 40px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: 350px;
+    padding: 20px;
+    background-color:rgb(184, 179, 170) ;
+    display: none;
+    width: 850px;
+}
+#hidden_table input{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+#hidden_table button{
+    margin: 10px 20px;
+    background-color: burlywood;
+    width: 100px;
+}
+#hidden_table button:hover{
+    cursor: pointer;
+}
+</style>
+<body>
+    <table id="table" cellspacing="20px" >
+        <tr>
+            <td><h1>S.no</h1></td>
+            <td><h1>first name</h1></td>
+            <td><h1>last name</h1></td>
+            <td><h1>age</h1></td>
+            <td><h1>class</h1></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Saif </td>
+            <td>Ali</td>
+            <td>18</td>
+            <td>12th</td>
+            <td><button id="delete">delete</button></td>
+            <td><button id="edit">edit</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Hareem</td>
+            <td>azlan</td>
+            <td>6</td>
+            <td>5</td>
+            <td><button id="delete">delete</button></td>
+            <td><button id="edit">edit</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Wasfa</td>
+            <td>Khan</td>
+            <td>10</td>
+            <td>6</td>
+            <td><button id="delete">delete</button></td>
+            <td><button id="edit">edit</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Faris</td>
+            <td>hameed</td>
+            <td>14</td>
+            <td>8</td>
+            <td><button id="delete">delete</button></td>
+            <td><button id="edit">edit</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Warda</td>
+            <td>Kashif</td>
+            <td>21</td>
+            <td>uni</td>
+            <td><button id="delete">delete</button></td>
+            <td><button id="edit">edit</button></td>
+        </tr>
+    </table>
+
+        <div id="hidden_table">
+            <tr><p id="student_info"></p></tr>
+            <tr>
+                <td ><input id="s_no" type="text" value="" placeholder="s.no"></td>
+                <td ><input id="first_name" type="text" value="" placeholder="first name"></td>
+                <td ><input id="last_name" type="text" value="" placeholder="last name"></td>
+                <td ><input id="age" type="text" value="" placeholder="age"></td>
+                <td ><input id="class" type="text" value="" placeholder="class"></td>
+            </tr>
+            <tr><button id="done">edit</button></tr>
+            <tr><button id="back">back</button></tr>
+        </div>
+
+    <script src="./js/Q3.js"></script>
+</body>
+</html>
